@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Movie Name</title>
+  <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Guess the Movie Name</h1>
+    <div id="game-container">
+      <p id="movie-title"></p>
+      <input type="text" id="user-input" placeholder="Enter your guess">
+      <button id="submit-btn">Submit</button>
+    </div>
+    <div id="score-container">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+  </div>
+  <div class="game-over-popup" id="game-over-popup">
+    <h2>Game Over</h2>
+    <p id="game-over-message"></p>
+    <p>Your final score: <span id="final-score"></span></p>
+    <button id="play-again-button" onclick="resetGame()">Play Again</button>
+  </div>
+  <script src="./game.js"></script>
+</body>
+</html>
