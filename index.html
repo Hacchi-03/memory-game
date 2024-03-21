@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./game.css">
 </head>
 <body>
+  <audio  id="bgm" autoplay loop>
+    <source src="./assets/backgound.mp3" type="audio/mpeg">
+  </audio>
   <div class="container">
     <h1>Guess the Movie Name</h1>
     <div id="game-container">
@@ -16,6 +19,7 @@
     </div>
     <div id="score-container">
       <p>Score: <span id="score">0</span></p>
+      <div id="timer-display">Time left: <span id="timer">25</span> seconds</div>
     </div>
   </div>
   <div class="game-over-popup" id="game-over-popup">
