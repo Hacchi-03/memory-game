@@ -3,34 +3,43 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
+  background: url('./assets/game-screen-background.jpg')  no-repeat fixed;
+  background-size: cover;
 }
 
 .container {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
+  margin-top: 200px;
+}
+.container h1{
+  color: cornsilk;
 }
 
 #game-container {
   margin-bottom: 20px;
 }
-
+#movie-title{
+  font-size: 70px;
+}
 input[type="text"] {
   width: 80%;
   padding: 10px;
   margin-top: 10px;
+  color: green;
 }
 
 #submit-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color:yellowgreen;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 #submit-btn:hover {
-  background-color: #0056b3;
+  background-color: red;
 }
 
 #score-container {
@@ -47,6 +56,7 @@ input[type="text"] {
   padding: 20px;
   border: 2px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 300px;
 }
 
 .game-over-popup h2 {
